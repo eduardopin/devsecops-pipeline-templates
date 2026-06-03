@@ -1,0 +1,9 @@
+name: iac-security
+on: [push, pull_request]
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder for Checkov / Trivy / Semgrep
+        run: echo "Add scanners according to project policy"
